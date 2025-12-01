@@ -1,0 +1,40 @@
+{
+  "name": "mad-journey-crm-backend",
+  "version": "1.0.0",
+  "description": "Backend API for MAD Journey Firearm Training CRM System",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "init-db": "node src/database/init.js",
+    "seed": "node src/database/seed.js",
+    "test": "jest"
+  },
+  "keywords": ["crm", "training", "firearm", "mad-journey"],
+  "author": "Trent Tactical Services",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.35.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "express-validator": "^7.0.1",
+    "nodemailer": "^6.9.7",
+    "twilio": "^4.19.0",
+    "pdfkit": "^0.13.0",
+    "uuid": "^9.0.1",
+    "date-fns": "^2.30.0",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "express-rate-limit": "^7.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  }
+}
